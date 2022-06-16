@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+      background-color: rgb(89, 220, 78);
+      box-sizing: border-box;
+      height: 100vh;
+  }
+
+  .content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px 0;
+    height: 100%;
+  }
+  
+  h3{
+    padding: 15px;
+}
+  
+  #screen{
+      background-color: #C8E9EA;
+      color: #46B7B9;
+      border: 1px solid burlywood;
+      min-width: 25%;
+      height: 30%;
+      position: relative;
+  }
+
+  #menu-icon{
+    width: 7px;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    cursor: pointer;
+}
+
+.count{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5em;
+    margin: 0 30px;
+    position: absolute;
+    right: 10%;
+    top:40%;
+    min-width: auto;
+}
+
+  .result{
+    display: flex;
+    justify-content: flex-end;
+    font-size:  2.5em;
+    margin: 0 30px;
+    opacity: 0.3;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    min-width: auto;
+}
+
+  .buttons-container{
+    background-color: #46B7B9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid rgb(255, 0, 0);
+    font-size: 1.5em;
+    min-width: 25%;
+  }
+
+  #back-mistake{
+    width: 20px;
+}
+  
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: 0.5px solid black;
+    aspect-ratio: 1 / 1;   
+}
+
+  
+  .equality-button{
+      grid-row: 4 / 6;
+      grid-column: 4 / 5;
+      aspect-ratio: 1/2; 
+  }
+  
+  
+  /*
+  1. rem / em => pentru font raportat la ....
+  2. screen-ul sa nu-si modifice inaltimea
+  3. wrap la tot calculatorul intr-un container.
+  */
+  
